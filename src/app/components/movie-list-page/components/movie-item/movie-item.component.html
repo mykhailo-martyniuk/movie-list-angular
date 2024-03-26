@@ -1,0 +1,12 @@
+<a [routerLink]="['/movie/', movie?.id]">
+  <div class="card">
+    <img [src]="'https://image.tmdb.org/t/p/w154/' + movie?.poster_path" [alt]="movie?.title" />
+    <div class="overlay">
+      <div class="button-wrap">
+        <button (click)="handleAddFavorite($event)">
+          <app-icon-like [isFilled]="isFavorite"></app-icon-like>
+        </button>
+      </div>
+    </div>
+  </div>
+</a>

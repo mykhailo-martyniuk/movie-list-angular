@@ -1,0 +1,38 @@
+.content {
+  margin-top: 50px;
+  display: flex;
+}
+.description-container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+h4 {
+  font-size: 36px;
+}
+.title-container {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: baseline;
+  gap: 20px
+}
+.year {
+  text-decoration: underline;
+}
+img {
+  height: 600px;
+  display: block;
+  border-radius: 4px;
+}
+
+.description {
+  text-align: left;
+}
+
+.genres {
+  margin-bottom: 50px;
+}
+
+.like{
+  text-align: left;
+}

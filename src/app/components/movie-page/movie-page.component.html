@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="content">
+    <img [src]="'https://image.tmdb.org/t/p/' + 'w500' + movie?.poster_path" alt="poster" />
+    <div class="description-container">
+      <div class="title-container">
+        <h4>{{ movie?.title }}</h4>
+        <p class="year">{{ movie?.release_date }}</p>
+        <p>{{ movie?.vote_average }}</p>
+      </div>
+      <p class="description">{{ movie?.overview }}</p>
+    </div>
+  </div>
+</div>

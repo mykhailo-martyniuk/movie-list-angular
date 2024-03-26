@@ -1,0 +1,30 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+
+
+button {
+  padding: 16px 8px;
+  background-color: #202830;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  color: inherit;
+}
+
+button:not(:first-child) {
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.active {
+  background-color: #445567;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}

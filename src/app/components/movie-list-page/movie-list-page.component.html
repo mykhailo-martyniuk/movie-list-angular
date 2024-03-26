@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="btn-container">
+    <div>
+      <button (click)="handleClickPopular()" [class.active]="showPopular">Popular</button>
+      <button (click)="handleClickLatest()" [class.active]="!showPopular">Latest</button>
+    </div>
+    <div>
+      <button (click)="prevPage()" [class.active]="currentPage > 1" [disabled]="currentPage <= 1">Back</button>
+      <button (click)="nextPage()" class="active">Next</button>
+    </div>
+  </div>
+  <div class="list">
+    <app-movie-item
+      *ngFor="let movie of movies"
+      [movie]="movie"
+      [isFavorite]="favoritesMoviesIds.includes(movie.id)"
+      (addFavorite)="addFavorite($event)"
+    ></app-movie-item>
+  </div>
+</div>
